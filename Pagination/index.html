@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table Pagination</title>
+  
+    <link rel="stylesheet" href="style.css">
+   
+    <script type="text/javascript" src="paginator.js"></script>
+    <script type="text/javascript" src="script.js"></script>    
+  
+</head>
+
+<!--onload function to populate table from JSON data-->
+<body onload="tab();">
+
+    <h1 align="center">Table Pagination</h1>
+    <br><br>
+
+    <!--Table-->
+    <div id="table_box_native">
+        <table id="casewise_table" class="report_table" align="center" width="70%" border=1>
+        </table>
+    </div>
+    <br><br>
+
+    <!--Table pages box-->
+    <div id="index_native" class="box"></div>    
+        
+    <!--function call to add pagination after loading of page-->
+    <script type="text/javascript">
+        window.addEventListener("load", function () {
+            
+            paginator({
+                table: document.getElementById("table_box_native").getElementsByTagName("table")[0],
+                box: document.getElementById("index_native"),
+                active_class: "color_page"
+            });
+        }, false);
+    </script>
+    
+	</body>
+</html>

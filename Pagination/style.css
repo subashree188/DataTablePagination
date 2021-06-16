@@ -1,0 +1,52 @@
+body{
+   color: #5a0404;    
+   font-family: sans-serif;
+}
+
+.box button{
+    font-size: large;  
+    background-color: #5a0404;  
+    color: #fff;
+    border: 1px solid #ffffff;
+}
+
+/* .box button:focus, .box button:active {
+    background-color: blue auto 5px; 
+} */
+
+.box select{
+    font-size: large;  
+    background-color: #5a0404;  
+    color: #fff;
+    border: 1px solid #ffffff;
+}
+
+.box{
+    color: #5a0404;
+    margin: 0px 30px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.box div, .box ul {
+    float: right;
+}
+    
+
+table{
+    background-color: #5a0404;
+	border-collapse: collapse;
+	border: 3px solid #5a0404;
+	text-align: center;
+    color: #fff;
+}
+table tr td {
+	border-collapse: collapse;
+	border: 2px solid #fff;
+	
+} 
+
+table thead{
+    border: 2px solid #fff;
+	
+}
